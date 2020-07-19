@@ -50,7 +50,7 @@ def main():
         s = input("\nEnter file #(s) to download: ")
         
         if s is 'a':
-            for i, match in enumerate(matches):
+            for match in matches:
                 cmd = 'wget -q --show-progress "' + bibUrl + match + '"'
                 os.system(cmd)
         else:
